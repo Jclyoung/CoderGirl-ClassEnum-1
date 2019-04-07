@@ -2,17 +2,45 @@
 
 namespace ClassEnum
 {
+    public enum CourseType
+    {
+        Algebra,
+        WorldHistory,
+        Geography,
+        Art,
+        English,
+        Latin,
+        Band,
+        Biology,
+        Physics,
+    }
+
+    class GetCourseSubjectName
+    {
+        public CourseType Subject { get; set; }
+
+    }
     public static class Program
     {
         public static void Main()
         {
+            
             Console.ReadLine();
         }
 
-        public static string GetCourseSubjectName(CourseSubject subject)
+        public static void CourseType(CourseType Subject)
         {
-            //return the enum subject as a string. IOW, if you pass in CourseSubject.Math, the method should return "Math".
+             Console.WriteLine(nameof(CourseType));
+
         }
+
+
+        //return the enum subject as a string. IOW, if you pass in CourseSubject.Math, 
+        //the method should return "Math".
+
+
+
+
     }
 
     //Create an enum named CourseSubject. 
