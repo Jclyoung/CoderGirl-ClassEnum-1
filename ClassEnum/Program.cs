@@ -18,20 +18,18 @@ namespace ClassEnum
     class GetCourseSubjectName
     {
         public CourseType Subject { get; set; }
-
     }
+
     public static class Program
     {
         public static void Main()
-        {
-            
+        {            
             Console.ReadLine();
         }
 
         public static void CourseType(CourseType Subject)
         {
              Console.WriteLine(nameof(CourseType));
-
         }
 
 
